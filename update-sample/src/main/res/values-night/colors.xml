@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="kiki_image_background_color">@color/teal_200</color>
+    <color name="kiki_dialog_background_color">@color/black</color>
+
+    <color name="kiki_text_color">@color/white</color>
+    <color name="kiki_accent_color">@color/purple_200</color>
+    <color name="kiki_button_text_color">@color/white</color>
+</resources>

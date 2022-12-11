@@ -7,4 +7,11 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="kiki_image_background_color">@color/teal_200</color>
+    <color name="kiki_dialog_background_color">@color/white</color>
+
+    <color name="kiki_text_color">@color/black</color>
+    <color name="kiki_accent_color">@color/purple_200</color>
+    <color name="kiki_button_text_color">@color/white</color>
 </resources>
