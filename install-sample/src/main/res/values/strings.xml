@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">install-sample</string>
+    <string name="ui_button">Ui Button</string>
 </resources>
