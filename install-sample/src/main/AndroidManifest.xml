@@ -9,6 +9,19 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.KikiSamples" />
+        android:theme="@style/Theme.KikiSamples">
+        <activity
+            android:name=".InstallSampleActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- You can set your app token -->
+        <meta-data
+            android:name="dev.kiki.APP_TOKEN"
+            android:value="15c35e0a-38df-4aa2-bbf2-b17048e12760" />
+    </application>
 
 </manifest>
