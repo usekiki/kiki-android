@@ -13,7 +13,7 @@ import com.google.android.material.snackbar.Snackbar
 import dev.kiki.update.AppUpdateManager
 import dev.kiki.update.UpdateManager
 
-class MainActivity : AppCompatActivity() {
+class UpdateSampleActivity : AppCompatActivity() {
 
     private val updateManager: UpdateManager = AppUpdateManager
 
@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
     private fun handleUpdateWithUi() {
         updateManager.checkUpdateInfo {
             onSuccess { updateInfo ->
-                if (updateInfo.isUpdateAvailable(this@MainActivity)) {
+                if (updateInfo.isUpdateAvailable(this@UpdateSampleActivity)) {
                     updateManager.startUpdateFlow()
                 } else {
                     Log.w(
@@ -49,7 +49,7 @@ class MainActivity : AppCompatActivity() {
     private fun handleUpdateWithoutUi() {
         updateManager.checkUpdateInfo {
             onSuccess { updateInfo ->
-                if (updateInfo.isUpdateAvailable(this@MainActivity)) {
+                if (updateInfo.isUpdateAvailable(this@UpdateSampleActivity)) {
                     showMyUpdateCustomUi(updateInfo.link)
                 } else {
                     Log.w(
