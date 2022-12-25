@@ -6,10 +6,15 @@ import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import dev.kiki.install.AppInstallManager
 import dev.kiki.install.InstallManager
+import java.util.Locale
 
 class InstallSampleActivity : AppCompatActivity() {
 
-    private val installManager: InstallManager = AppInstallManager
+    private val installManager: InstallManager = AppInstallManager.apply {
+        // If your default lang is not english, use this to select the right locale.
+        // otherwise the sdk will select the right locale from your app locale
+        setLocale(Locale("fa"))
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
