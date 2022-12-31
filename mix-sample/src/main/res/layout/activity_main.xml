@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom"
+    android:gravity="bottom|center_horizontal"
+    android:orientation="vertical">
+
+    <CheckBox
+        android:id="@+id/isInstallEnable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="8dp"
+        android:text="@string/is_install_enable_switch" />
+
+    <Button
+        android:id="@+id/get_share_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:minHeight="48dp"
+        android:text="@string/share_link" />
+
+    <Button
+        android:id="@+id/check_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:text="@string/check_update" />
+
+    <Button
+        android:id="@+id/start_update_flow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:text="@string/start_update" />
+
+    <Button
+        android:id="@+id/changeLocale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:text="@string/change_locale" />
+
+    <Button
+        android:id="@+id/start_update_flow_immediately"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:text="@string/start_update_immediately"
+        android:visibility="invisible" />
+
+</LinearLayout>

@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">mix-sample</string>
+    <string name="check_update">Check Update</string>
+    <string name="share_link">Copy Share link</string>
+    <string name="start_update">Start Update</string>
+    <string name="change_locale">Change Locale</string>
+    <string name="start_update_immediately">Start Update Immediately</string>
+    <string name="share_entity_title">Share</string>
+    <string name="is_install_enable_switch">Is Install Enable</string>
 </resources>

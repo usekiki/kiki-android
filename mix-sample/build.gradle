@@ -29,6 +29,9 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    buildFeatures {
+        viewBinding true
+    }
     flavorDimensions "update"
     productFlavors {
         web {
@@ -42,10 +45,11 @@ android {
 
 dependencies {
 
-    webImplementation "dev.kiki:install:1.2.0"
-    marketImplementation "dev.kiki:install-no-op:1.2.0"
-    marketImplementation "dev.kiki:update:1.2.0"
-    webImplementation "dev.kiki:update-no-op:1.2.0"
+    def kikiVersion = "1.1.0"
+    webImplementation "dev.kiki:install:$kikiVersion"
+    marketImplementation "dev.kiki:install-no-op:$kikiVersion"
+    marketImplementation "dev.kiki:update:$kikiVersion"
+    webImplementation "dev.kiki:update-no-op:$kikiVersion"
 
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.5.1'
