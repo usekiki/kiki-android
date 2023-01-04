@@ -21,7 +21,7 @@
         <!-- You can set your app token -->
         <meta-data
             android:name="dev.kiki.APP_TOKEN"
-            android:value="15c35e0a-38df-4aa2-bbf2-b17048e12760" />
+            android:value="ba1b2724-b476-4795-b964-eebaf6bb082d" />
     </application>
 
 
