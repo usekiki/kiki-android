@@ -12,10 +12,15 @@ import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.snackbar.Snackbar
 import dev.kiki.update.AppUpdateManager
 import dev.kiki.update.UpdateManager
+import java.util.Locale
 
-class MainActivity : AppCompatActivity() {
+class UpdateSampleActivity : AppCompatActivity() {
 
-    private val updateManager: UpdateManager = AppUpdateManager
+    private val updateManager: UpdateManager = AppUpdateManager.apply {
+        // If your default lang is not english, use this to select the right locale.
+        // otherwise the sdk will select the right locale from your app locale
+        // setLocale(Locale("fa"))
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,7 +36,7 @@ class MainActivity : AppCompatActivity() {
     private fun handleUpdateWithUi() {
         updateManager.checkUpdateInfo {
             onSuccess { updateInfo ->
-                if (updateInfo.isUpdateAvailable(this@MainActivity)) {
+                if (updateInfo.isUpdateAvailable(this@UpdateSampleActivity)) {
                     updateManager.startUpdateFlow()
                 } else {
                     Log.w(
@@ -49,7 +54,7 @@ class MainActivity : AppCompatActivity() {
     private fun handleUpdateWithoutUi() {
         updateManager.checkUpdateInfo {
             onSuccess { updateInfo ->
-                if (updateInfo.isUpdateAvailable(this@MainActivity)) {
+                if (updateInfo.isUpdateAvailable(this@UpdateSampleActivity)) {
                     showMyUpdateCustomUi(updateInfo.link)
                 } else {
                     Log.w(

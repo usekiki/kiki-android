@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">install-sample</string>
+    <string name="ui_button">Ui Button</string>
+    <string name="custom_ui_button">Custom Ui Button</string>
+    <string name="download_progress_place_holder">Downloading %f</string>
+    <string name="install_now">Install Now</string>
+    <string name="install">Install</string>
+    <string name="update_failed">Update Failed!</string>
+</resources>

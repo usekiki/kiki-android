@@ -13,4 +13,4 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "KikiSamples"
-include ':update-sample'
+include ':update-sample', ':install-sample', ':mix-sample'
